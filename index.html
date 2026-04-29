@@ -15,7 +15,7 @@ box-sizing:border-box;
 
 body{
 font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#4b4b4b,#6b625c,#8b7d73);
+background:linear-gradient(135deg,#4f4a45,#6e655e,#8c8178);
 color:#fff;
 }
 
@@ -27,11 +27,11 @@ padding:20px;
 
 /* HEADER */
 .hero{
-background:linear-gradient(135deg,#5c5048,#7a6d63,#9a8d83);
+background:linear-gradient(135deg,#6b625b,#85786f,#a3968d);
 border-radius:24px;
 padding:60px 20px;
 text-align:center;
-box-shadow:0 20px 50px rgba(0,0,0,.45);
+box-shadow:0 20px 50px rgba(0,0,0,.35);
 margin-bottom:25px;
 position:relative;
 overflow:hidden;
@@ -40,12 +40,12 @@ overflow:hidden;
 .hero:before{
 content:'';
 position:absolute;
-width:250px;
-height:250px;
-background:rgba(255,255,255,.08);
+width:240px;
+height:240px;
 border-radius:50%;
-top:-80px;
-left:-80px;
+background:rgba(255,255,255,.06);
+top:-90px;
+left:-90px;
 }
 
 .hero:after{
@@ -53,50 +53,48 @@ content:'';
 position:absolute;
 width:220px;
 height:220px;
-background:rgba(255,255,255,.06);
 border-radius:50%;
-bottom:-80px;
-right:-80px;
+background:rgba(255,255,255,.05);
+bottom:-90px;
+right:-90px;
 }
 
 .logo{
-position:relative;
-z-index:2;
-font-size:58px;
+font-size:56px;
 font-weight:800;
 letter-spacing:3px;
-text-shadow:0 6px 18px rgba(0,0,0,.35);
+position:relative;
+z-index:2;
 }
 
 .tagline{
+margin-top:10px;
+font-size:18px;
+opacity:.95;
 position:relative;
 z-index:2;
-font-size:18px;
-margin-top:10px;
-font-weight:500;
-opacity:.95;
 }
 
 .sub{
+margin-top:12px;
+font-size:14px;
+opacity:.9;
 position:relative;
 z-index:2;
-margin-top:14px;
-font-size:15px;
-opacity:.9;
 }
 
 /* CARD */
 .card{
-background:rgba(40,40,40,.95);
-border:1px solid rgba(255,255,255,.06);
+background:rgba(36,36,36,.92);
+border:1px solid rgba(255,255,255,.05);
 border-radius:22px;
 padding:25px;
 margin-bottom:22px;
-box-shadow:0 15px 40px rgba(0,0,0,.25);
+box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 .card h2{
-font-size:24px;
+font-size:23px;
 margin-bottom:18px;
 padding-bottom:12px;
 border-bottom:1px solid rgba(255,255,255,.08);
@@ -115,8 +113,8 @@ margin-bottom:16px;
 label{
 display:block;
 font-size:14px;
-margin-bottom:7px;
-color:#f1f1f1;
+margin-bottom:8px;
+color:#ececec;
 }
 
 input,select{
@@ -124,14 +122,14 @@ width:100%;
 padding:14px;
 border:none;
 border-radius:12px;
-background:#2e2e2e;
+background:#1c1c1c;
 color:#fff;
 font-size:14px;
 outline:none;
 }
 
 input:focus,select:focus{
-box-shadow:0 0 0 2px #b89b84;
+box-shadow:0 0 0 2px #d0b8a1;
 }
 
 /* TICKET */
@@ -142,7 +140,7 @@ gap:16px;
 }
 
 .ticket{
-background:#2e2e2e;
+background:#1c1c1c;
 padding:18px;
 border-radius:18px;
 cursor:pointer;
@@ -155,20 +153,20 @@ transform:translateY(-5px);
 }
 
 .ticket.active{
-border-color:#d2b49c;
-background:linear-gradient(135deg,#5c5048,#403833);
+border-color:#d7b79d;
+background:linear-gradient(135deg,#5f554e,#3c3531);
 }
 
 .ticket b{
-font-size:18px;
 display:block;
+font-size:18px;
 margin-bottom:8px;
 }
 
 .price{
 font-size:15px;
 font-weight:700;
-color:#ffd59e;
+color:#ffdca8;
 }
 
 .preview{
@@ -181,7 +179,7 @@ border-radius:16px;
 }
 
 .invoice{
-background:#1e1e1e;
+background:#111;
 padding:18px;
 border-radius:16px;
 line-height:1.9;
@@ -202,9 +200,9 @@ border-radius:18px;
 
 .timer{
 text-align:center;
-font-size:26px;
+font-size:28px;
 font-weight:800;
-color:#ffd59e;
+color:#ffdca8;
 margin-top:15px;
 }
 
@@ -217,8 +215,8 @@ font-size:20px;
 font-weight:800;
 cursor:pointer;
 color:#fff;
-background:linear-gradient(135deg,#6b625c,#a08f83);
-box-shadow:0 10px 25px rgba(0,0,0,.35);
+background:linear-gradient(135deg,#7a6e66,#a09187);
+box-shadow:0 10px 25px rgba(0,0,0,.3);
 transition:.25s;
 }
 
@@ -244,9 +242,11 @@ color:#ddd;
 .grid-2,.ticket-wrap{
 grid-template-columns:1fr;
 }
+
 .logo{
 font-size:38px;
 }
+
 .hero{
 padding:45px 15px;
 }
@@ -258,14 +258,53 @@ padding:45px 15px;
 
 <div class="container">
 
+<!-- HEADER -->
 <div class="hero">
-<div class="logo">BEKASIMARATHON</div>
+<div class="logo"> BEKASIMARATHON </div>
 <div class="tagline">BEKASIMARATHON 2026</div>
 <div class="sub">Official Registration System</div>
 </div>
 
 <form id="form">
 
+<!-- DATA PESERTA -->
+<div class="card">
+<h2>Informasi Peserta</h2>
+
+<div class="form-group">
+<label>Nama Lengkap</label>
+<input required>
+</div>
+
+<div class="grid-2">
+<div class="form-group">
+<label>Email</label>
+<input type="email" required>
+</div>
+
+<div class="form-group">
+<label>No HP</label>
+<input required>
+</div>
+</div>
+
+<div class="grid-2">
+<div class="form-group">
+<label>Tanggal Lahir</label>
+<input type="date" required>
+</div>
+
+<div class="form-group">
+<label>Jenis Kelamin</label>
+<select>
+<option>Pria</option>
+<option>Wanita</option>
+</select>
+</div>
+</div>
+</div>
+
+<!-- TIKET -->
 <div class="card">
 <h2>Pilih Kategori Tiket</h2>
 
@@ -294,6 +333,28 @@ padding:45px 15px;
 </div>
 </div>
 
+<!-- SIZE -->
+<div class="card">
+<h2>Ukuran Jersey</h2>
+
+<div class="preview">
+<img src="size-chart.png">
+</div>
+
+<div class="form-group" style="margin-top:15px;">
+<label>Pilih Ukuran</label>
+<select>
+<option>XS</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+</select>
+</div>
+</div>
+
+<!-- INVOICE -->
 <div class="card">
 <h2>Invoice</h2>
 <div class="invoice" id="invoice">
@@ -301,7 +362,36 @@ Belum ada tiket dipilih
 </div>
 </div>
 
+<!-- QRIS -->
+<div class="card">
+<h2>Pembayaran QRIS</h2>
+
+<div class="qris">
+<img src="qris.png">
+</div>
+
+<div class="timer">
+<span id="time">10:00</span>
+</div>
+
+<div class="note">Selesaikan pembayaran sebelum waktu habis</div>
+</div>
+
+<!-- UPLOAD -->
+<div class="card">
+<h2>Upload Bukti Pembayaran</h2>
+
+<div class="form-group">
+<label>Screenshot Transfer</label>
+<input type="file" required>
+</div>
+</div>
+
 <button type="submit">DAFTAR SEKARANG</button>
+
+<div class="note">
+Setelah submit akan diarahkan ke halaman konfirmasi
+</div>
 
 </form>
 
@@ -335,6 +425,16 @@ Biaya Admin : Rp 5.000<br>
 `;
 }
 
+let s=600;
+
+setInterval(()=>{
+let m=Math.floor(s/60);
+let d=s%60;
+if(d<10)d='0'+d;
+document.getElementById('time').innerHTML=m+":"+d;
+if(s>0)s--;
+},1000);
+
 document.getElementById('form').addEventListener('submit',function(a){
 a.preventDefault();
 
@@ -343,7 +443,9 @@ alert('Silakan pilih tiket terlebih dahulu');
 return;
 }
 
-alert('Pendaftaran berhasil!');
+alert('Pendaftaran berhasil! Anda akan diarahkan ke halaman konfirmasi.');
+
+window.location.href='https://admin-tiket.github.io/JRF-2026-KONFIRMASI/';
 });
 </script>
 
