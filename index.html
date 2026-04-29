@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BEKASIMARATHON 2026 Registration</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>BEKASIMARATHON 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -17,130 +17,83 @@ body{
 font-family:'Poppins',sans-serif;
 background:linear-gradient(135deg,#4f4a45,#6e655e,#8c8178);
 color:#fff;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
 padding:20px;
 }
 
-/* HEADER */
-.hero{
-background:linear-gradient(135deg,#6b625b,#85786f,#a3968d);
+.container{
+max-width:1000px;
+margin:auto;
+}
+
+/* BOX */
+.box{
+background:rgba(35,35,35,.95);
 border-radius:24px;
-padding:60px 20px;
-text-align:center;
-box-shadow:0 20px 50px rgba(0,0,0,.35);
-margin-bottom:25px;
-position:relative;
-overflow:hidden;
-}
-
-.hero:before{
-content:'';
-position:absolute;
-width:240px;
-height:240px;
-border-radius:50%;
-background:rgba(255,255,255,.06);
-top:-90px;
-left:-90px;
-}
-
-.hero:after{
-content:'';
-position:absolute;
-width:220px;
-height:220px;
-border-radius:50%;
-background:rgba(255,255,255,.05);
-bottom:-90px;
-right:-90px;
-}
-
-.logo{
-font-size:56px;
-font-weight:800;
-letter-spacing:3px;
-position:relative;
-z-index:2;
-}
-
-.tagline{
-margin-top:10px;
-font-size:18px;
-opacity:.95;
-position:relative;
-z-index:2;
-}
-
-.sub{
-margin-top:12px;
-font-size:14px;
-opacity:.9;
-position:relative;
-z-index:2;
-}
-
-/* CARD */
-.card{
-background:rgba(36,36,36,.92);
-border:1px solid rgba(255,255,255,.05);
-border-radius:22px;
-padding:25px;
+padding:28px;
 margin-bottom:22px;
-box-shadow:0 15px 35px rgba(0,0,0,.25);
+box-shadow:0 15px 40px rgba(0,0,0,.25);
 }
 
-.card h2{
+.hero{
+text-align:center;
+padding:50px 20px;
+background:linear-gradient(135deg,#6f655d,#8e8178,#aa9c92);
+border-radius:24px;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:52px;
+font-weight:800;
+}
+
+.hero p{
+margin-top:10px;
+font-size:17px;
+opacity:.95;
+}
+
+h2{
 font-size:23px;
 margin-bottom:18px;
-padding-bottom:12px;
-border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.grid-2{
+.grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:16px;
 }
 
-.form-group{
-margin-bottom:16px;
-}
-
 label{
 display:block;
-font-size:14px;
 margin-bottom:8px;
-color:#ececec;
+font-size:14px;
 }
 
 input,select{
 width:100%;
 padding:14px;
 border:none;
-border-radius:12px;
-background:#1c1c1c;
+border-radius:14px;
+background:#1b1b1b;
 color:#fff;
 font-size:14px;
 outline:none;
+margin-bottom:14px;
 }
 
 input:focus,select:focus{
-box-shadow:0 0 0 2px #d0b8a1;
+box-shadow:0 0 0 2px #d7b79d;
 }
 
-/* TICKET */
-.ticket-wrap{
+.ticket-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:16px;
 }
 
 .ticket{
-background:#1c1c1c;
+background:#1b1b1b;
 padding:18px;
 border-radius:18px;
 cursor:pointer;
@@ -149,61 +102,39 @@ transition:.25s;
 }
 
 .ticket:hover{
-transform:translateY(-5px);
+transform:translateY(-4px);
 }
 
 .ticket.active{
 border-color:#d7b79d;
-background:linear-gradient(135deg,#5f554e,#3c3531);
+background:linear-gradient(135deg,#5f554e,#3e3631);
 }
 
 .ticket b{
-display:block;
 font-size:18px;
+display:block;
 margin-bottom:8px;
 }
 
 .price{
-font-size:15px;
+color:#ffd89f;
 font-weight:700;
-color:#ffdca8;
 }
 
-.preview{
-text-align:center;
-}
-
-.preview img{
+img{
 max-width:100%;
-border-radius:16px;
-}
-
-.invoice{
-background:#111;
-padding:18px;
-border-radius:16px;
-line-height:1.9;
-font-size:15px;
-}
-
-.qris{
-text-align:center;
-}
-
-.qris img{
-width:260px;
-max-width:100%;
-background:#fff;
-padding:12px;
 border-radius:18px;
 }
 
-.timer{
+.center{
 text-align:center;
-font-size:28px;
+}
+
+.timer{
+font-size:30px;
 font-weight:800;
-color:#ffdca8;
-margin-top:15px;
+color:#ffd89f;
+margin-top:12px;
 }
 
 button{
@@ -215,41 +146,57 @@ font-size:20px;
 font-weight:800;
 cursor:pointer;
 color:#fff;
-background:linear-gradient(135deg,#7a6e66,#a09187);
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-transition:.25s;
+background:linear-gradient(135deg,#756961,#a19288);
+margin-top:8px;
 }
 
 button:hover{
-transform:translateY(-3px);
+opacity:.95;
 }
 
 .note{
-text-align:center;
-margin-top:12px;
 font-size:13px;
-color:#ddd;
+opacity:.9;
+margin-top:10px;
+text-align:center;
 }
 
-.footer{
+#page2{
+display:none;
 text-align:center;
-padding:35px 10px;
-font-size:13px;
-color:#ddd;
+padding:70px 25px;
+}
+
+#page2 h1{
+font-size:44px;
+margin-bottom:16px;
+}
+
+#page2 p{
+font-size:18px;
+line-height:1.8;
+opacity:.95;
+}
+
+.success{
+font-size:70px;
+margin-bottom:15px;
 }
 
 @media(max-width:800px){
-.grid-2,.ticket-wrap{
+
+.grid,.ticket-grid{
 grid-template-columns:1fr;
 }
 
-.logo{
-font-size:38px;
+.hero h1{
+font-size:34px;
 }
 
-.hero{
-padding:45px 15px;
+#page2 h1{
+font-size:30px;
 }
+
 }
 </style>
 </head>
@@ -258,74 +205,72 @@ padding:45px 15px;
 
 <div class="container">
 
-<!-- HEADER -->
+<!-- PAGE 1 -->
+<div id="page1">
+
 <div class="hero">
-<div class="logo"> BEKASIMARATHON </div>
-<div class="tagline">BEKASIMARATHON 2026</div>
-<div class="sub">Official Registration System</div>
+<h1>BEKASIMARATHON</h1>
+<p>Official Registration 2026</p>
 </div>
 
 <form id="form">
 
-<!-- DATA PESERTA -->
-<div class="card">
+<div class="box">
 <h2>Informasi Peserta</h2>
 
-<div class="form-group">
 <label>Nama Lengkap</label>
-<input required>
-</div>
+<input type="text" required>
 
-<div class="grid-2">
-<div class="form-group">
+<div class="grid">
+<div>
 <label>Email</label>
 <input type="email" required>
 </div>
 
-<div class="form-group">
+<div>
 <label>No HP</label>
-<input required>
+<input type="text" required>
 </div>
 </div>
 
-<div class="grid-2">
-<div class="form-group">
+<div class="grid">
+<div>
 <label>Tanggal Lahir</label>
 <input type="date" required>
 </div>
 
-<div class="form-group">
+<div>
 <label>Jenis Kelamin</label>
-<select>
+<select required>
 <option>Pria</option>
 <option>Wanita</option>
 </select>
 </div>
 </div>
+
 </div>
 
-<!-- TIKET -->
-<div class="card">
+<div class="box">
 <h2>Pilih Kategori Tiket</h2>
 
-<div class="ticket-wrap">
+<div class="ticket-grid">
 
-<div class="ticket" onclick="pick('5K',300000,this)">
+<div class="ticket" onclick="pick(event,'5K',300000,this)">
 <b>5K</b>
 <div class="price">Rp300.000</div>
 </div>
 
-<div class="ticket" onclick="pick('10K',350000,this)">
+<div class="ticket" onclick="pick(event,'10K',350000,this)">
 <b>10K</b>
 <div class="price">Rp350.000</div>
 </div>
 
-<div class="ticket" onclick="pick('Half Marathon',550000,this)">
+<div class="ticket" onclick="pick(event,'HM',550000,this)">
 <b>HM</b>
 <div class="price">Rp550.000</div>
 </div>
 
-<div class="ticket" onclick="pick('Full Marathon',750000,this)">
+<div class="ticket" onclick="pick(event,'FM',750000,this)">
 <b>FM</b>
 <div class="price">Rp750.000</div>
 </div>
@@ -333,17 +278,15 @@ padding:45px 15px;
 </div>
 </div>
 
-<!-- SIZE -->
-<div class="card">
+<div class="box">
 <h2>Ukuran Jersey</h2>
 
-<div class="preview">
+<div class="center">
 <img src="size-chart.png">
 </div>
 
-<div class="form-group" style="margin-top:15px;">
-<label>Pilih Ukuran</label>
-<select>
+<label style="margin-top:15px;">Pilih Ukuran</label>
+<select required>
 <option>XS</option>
 <option>S</option>
 <option>M</option>
@@ -351,52 +294,56 @@ padding:45px 15px;
 <option>XL</option>
 <option>XXL</option>
 </select>
-</div>
+
 </div>
 
-<!-- INVOICE -->
-<div class="card">
+<div class="box">
 <h2>Invoice</h2>
-<div class="invoice" id="invoice">
+<div id="invoice">
 Belum ada tiket dipilih
 </div>
 </div>
 
-<!-- QRIS -->
-<div class="card">
+<div class="box">
 <h2>Pembayaran QRIS</h2>
 
-<div class="qris">
-<img src="qris.png">
+<div class="center">
+<img src="qris.png" style="width:260px;background:#fff;padding:10px;">
 </div>
 
-<div class="timer">
-<span id="time">10:00</span>
-</div>
-
+<div class="center timer" id="time">10:00</div>
 <div class="note">Selesaikan pembayaran sebelum waktu habis</div>
+
 </div>
 
-<!-- UPLOAD -->
-<div class="card">
+<div class="box">
 <h2>Upload Bukti Pembayaran</h2>
 
-<div class="form-group">
 <label>Screenshot Transfer</label>
 <input type="file" required>
-</div>
+
 </div>
 
 <button type="submit">DAFTAR SEKARANG</button>
-
-<div class="note">
-Setelah submit akan diarahkan ke halaman konfirmasi
-</div>
+<div class="note">Setelah submit akan diarahkan ke halaman konfirmasi</div>
 
 </form>
 
-<div class="footer">
-© BEKASIMARATHON 2026 Official Registration System
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="box">
+
+<div class="success">✅</div>
+
+<h1>Terimakasih Telah Mendaftar</h1>
+
+<p>
+Pendaftaran Anda telah berhasil dikirim.<br>
+Silahkan tunggu konfirmasi melalui Email.<br><br>
+Tim kami akan segera memverifikasi data Anda.
+</p>
+
 </div>
 
 </div>
@@ -405,7 +352,9 @@ Setelah submit akan diarahkan ke halaman konfirmasi
 let tiket='';
 let harga=0;
 
-function pick(n,p,e){
+function pick(ev,n,p,el){
+ev.preventDefault();
+
 tiket=n;
 harga=p;
 
@@ -413,7 +362,7 @@ document.querySelectorAll('.ticket').forEach(x=>{
 x.classList.remove('active');
 });
 
-e.classList.add('active');
+el.classList.add('active');
 
 document.getElementById('invoice').innerHTML=
 `
@@ -425,27 +374,38 @@ Biaya Admin : Rp 5.000<br>
 `;
 }
 
+/* TIMER */
 let s=600;
 
-setInterval(()=>{
+setInterval(function(){
+
 let m=Math.floor(s/60);
 let d=s%60;
+
 if(d<10)d='0'+d;
+
 document.getElementById('time').innerHTML=m+":"+d;
+
 if(s>0)s--;
+
 },1000);
 
-document.getElementById('form').addEventListener('submit',function(a){
-a.preventDefault();
+/* SUBMIT */
+document.getElementById('form').addEventListener('submit',function(e){
+
+e.preventDefault();
 
 if(tiket==''){
 alert('Silakan pilih tiket terlebih dahulu');
 return;
 }
 
-alert('Pendaftaran berhasil! Anda akan diarahkan ke halaman konfirmasi.');
+/* pindah ke page 2 */
+document.getElementById('page1').style.display='none';
+document.getElementById('page2').style.display='block';
 
-window.location.href='https://admin-tiket.github.io/JRF-2026-KONFIRMASI/';
+window.scrollTo(0,0);
+
 });
 </script>
 
